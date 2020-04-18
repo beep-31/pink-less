@@ -130,6 +130,9 @@ a {
   }
 }
 @media (min-width: 1200px) {
+  .main-nav {
+    opacity: 1 !important;
+  }
   .list-item--active a {
     padding-bottom: 10px;
     border-bottom: 3px solid #fff;
@@ -323,7 +326,7 @@ a {
 }
 .skew-c {
   width: 100vw;
-  height: 20px;
+  height: 40px;
   position: absolute;
   left: 0px;
   background: linear-gradient(to right bottom, #fff 49%, #f2f2f2 50%);
@@ -353,6 +356,11 @@ a {
 .feature__image--mobile {
   margin: 0 auto;
   text-align: center;
+}
+.feature__image--mobile img {
+  width: 168px;
+  height: auto;
+  margin-bottom: -5px;
 }
 .feature__text {
   text-align: center;
@@ -391,19 +399,21 @@ a {
     margin-bottom: 50px;
   }
   .skew-c {
-    height: 40px;
+    height: 120px;
   }
   .feature__image--mobile {
-    width: 269px;
+    position: relative;
   }
   .feature__image--mobile img {
     height: 100%;
     width: 100%;
-    margin-top: 70px;
-    margin-right: auto;
+  }
+  .features__text {
+    margin-top: 60px;
   }
   .feature__text {
     text-align: left;
+    position: relative;
   }
   .feature__description {
     line-height: 1.8;
@@ -440,6 +450,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 0px;
   }
   .feature__text {
     text-align: center;
@@ -455,5 +466,163 @@ a {
   }
   .skew-c {
     height: 96px;
+  }
+}
+.effect__wrapper {
+  display: none;
+}
+@media (min-width: 660px) {
+  .effect__wrapper {
+    max-width: 620px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+  .effect {
+    background-color: #ffffff;
+    padding-top: 60px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .effect__right h3 {
+    font-size: 30px;
+    font-weight: 700;
+    max-width: 160px;
+    margin-bottom: 22px;
+  }
+  .effect__right p {
+    font-size: 15px;
+    color: #616c77;
+    line-height: 1.9;
+    margin-bottom: 22px;
+  }
+  .effect__right a {
+    color: #dd5d80;
+    text-decoration: underline;
+    font-size: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .effect__wrapper {
+    max-width: 960px;
+  }
+  .effect__right {
+    margin-left: 80px;
+  }
+  .effect__right h3 {
+    max-width: 300px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+  }
+  .effect__right p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding-right: 150px;
+  }
+  .effect__right a {
+    color: #dd5d80;
+    text-decoration: underline;
+  }
+}
+.reviews {
+  position: absolute;
+  top: 1777px;
+  padding: 50px 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+.reviews__quotes {
+  display: none;
+}
+.reviews__wrapper {
+  padding: 0 20px;
+}
+.slider-item {
+  transition: 0.3s linear;
+  display: none;
+}
+.slider-item--active {
+  opacity: 1;
+  transition: 0.3s linear;
+  display: flex;
+  flex-direction: column;
+}
+.review__item {
+  text-align: center;
+  transition: all 0.3 linear;
+}
+.review__name {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.review__position {
+  display: none;
+}
+.review__description {
+  font-size: 14px;
+  line-height: 2.14;
+  margin-bottom: 33px;
+}
+.reviews__dots {
+  text-align: center;
+}
+.dot {
+  margin: 0 10px;
+  width: 8px;
+  height: 8px;
+  outline: none;
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #bec2c7;
+  transition: 0.05s linear;
+}
+.dot--active {
+  width: 12px;
+  height: 12px;
+  border: 3px solid #283645;
+  background: transparent;
+}
+@media (min-width: 660px) {
+  .reviews {
+    position: static;
+  }
+  .reviews__wrapper {
+    padding: 0;
+    max-width: 620px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .review__position {
+    display: block;
+  }
+  .review__description {
+    order: 1;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.66;
+  }
+  .review__name {
+    order: 2;
+    margin-bottom: 18px;
+  }
+  .review__position {
+    order: 3;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews__wrapper {
+    max-width: 960px;
+  }
+  .reviews__quotes {
+    display: block;
+    text-align: center;
+  }
+  .reviews__quotes svg {
+    width: 80px;
+    height: auto;
+    fill: #efefef;
   }
 }

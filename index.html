@@ -64,6 +64,12 @@
         </g>
     </symbol>
 </svg>
+
+<svg style="display: none;">
+    <symbol id="quotes" viewBox="0 0 409.294 409.294">
+        <path d="m0 204.647v175.412h175.412v-175.412h-116.941c0-64.48 52.461-116.941 116.941-116.941v-58.471c-96.728 0-175.412 78.684-175.412 175.412z"/><path d="m409.294 87.706v-58.471c-96.728 0-175.412 78.684-175.412 175.412v175.412h175.412v-175.412h-116.941c0-64.48 52.461-116.941 116.941-116.941z"/>
+    </symbol>
+</svg>
     <header class="page-header">
             <div class="page-header__logo">
                 <a class="page-header__logo--mobile">
@@ -142,7 +148,7 @@
                             <img src="./img/features/phone3.png" alt="">
                         </div>
                         <div class="feature__image--mobile">
-                            <img src="./img/features/phone3.png" alt="">
+                            <img src="./img/features/phone-mobile.png" alt="">
                         </div>
                     </div>
                     <div class="features__text">
@@ -176,15 +182,64 @@
         </div>
     </section>
     <section class="effect">
-        <div class="effect__left">
-            <img src="./img/features/timer.png" alt="">
-        </div>
-        <div class="effect__right">
-            <h3>24 hours<br> effect!</h3>
-            <p>British scientists made some researches and proved that the positive effect after using some app lasts the whole day long!</p>
-            <a href="">Learn more about the research</a>
+        <div class="effect__wrapper">
+            <div class="effect__left">
+                <img src="./img/features/timer.png" alt="">
+            </div>
+            <div class="effect__right">
+                <h3>24 hours effect!</h3>
+                <p>British scientists made some researches and proved that the positive effect after using some app lasts the whole day long!</p>
+                <a href="">Learn more about the research</a>
+            </div>
         </div>
     </section>
-    <script src="script.js"></script>
+    <section class="reviews">
+        <div class="reviews__wrapper">
+            <div class="reviews__quotes">
+                <svg>
+                    <use xlink:href="#quotes">
+                </svg>
+            </div>
+            <div class="review__item slider-item slider-item--active">
+                <div class="review__name">
+                    <h3>Nikolay Petrov</h3>
+                </div>
+                <div class="review__position">
+                    25 y.o, Driver
+                </div>
+                <div class="review__description">
+                    <p>&laquo;This application turned my world around and made me look different on familiar and grey things! Also I met my future wife in the comments of one of her uploaded photos!&raquo;</p>
+                </div>
+            </div>
+            <div class="review__item slider-item">
+                <div class="review__name">
+                    <h3>Yulia Pavlova</h3>
+                </div>
+                <div class="review__position">
+                    23 y.o, Manager
+                </div>
+                <div class="review__description">
+                    <p>&laquo;This application turned my world around and made me look different on familiar and grey things! Also I met my future wife in the comments!&raquo;</p>
+                </div>
+            </div>
+            <div class="review__item slider-item">
+                <div class="review__name">
+                    <h3>Rick Ederson</h3>
+                </div>
+                <div class="review__position">
+                    37 y.o, Barman
+                </div>
+                <div class="review__description">
+                    <p>&laquo;This application turned my world around and made me look different on familiar and grey things! Also I met my future wife in the comments!&raquo;</p>
+                </div>
+            </div>
+            <div class="reviews__dots">
+                <button class="dot dot--active" type="button" id="review-dot"></button>
+                <button class="dot" type="button" id="review-dot"></button>
+                <button class="dot" type="button" id="review-dot"></button>
+            </div>
+        </div>
+    </section>
+<script src="script.js"></script>
 </body>
 </html>
