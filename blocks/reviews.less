@@ -1,4 +1,4 @@
-// main: ../style.less
+//main : ../style.less
 
 .reviews{
     position: absolute;
@@ -15,16 +15,13 @@
     padding: 0 20px;
 }
 
-.slider-item{
-    transition: 0.3s linear;
+.slider-item {
+    opacity: 0;
+    transition:all 0.3s linear;
     display: none;
-    &--active{
-        opacity: 1;
-        transition: 0.3s linear;
-        display: flex;
-        flex-direction: column;
-    }
+    flex-direction: column;
 }
+
 
 .review__item{
     text-align: center;
@@ -59,6 +56,7 @@
     border-radius: 50%;
     background-color: #bec2c7;
     transition: 0.05s linear;
+    cursor: pointer;
     &--active{
         width: 12px;
         height: 12px;
