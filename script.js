@@ -48,13 +48,13 @@
     function fadeSlider(i){
         setTimeout(function(){
             review_items[i].style.opacity+=opacity;
-            opacity+=0.1;
+            opacity+=0.05;
             if(opacity<1){
                 fadeSlider(i);
             } else{
                 clearTimeout();
             }
-        }, 20);
+        }, 100);
 
     }
     

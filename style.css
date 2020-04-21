@@ -11,6 +11,10 @@ body {
 a {
   text-decoration: none;
 }
+table {
+  border-style: hidden;
+  border-collapse: collapse;
+}
 .page-header {
   position: absolute;
   top: 0;
@@ -621,5 +625,224 @@ a {
     width: 80px;
     height: auto;
     fill: #efefef;
+  }
+}
+.pricing {
+  position: absolute;
+  top: 2136px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f2f2f2;
+  padding-bottom: 90px;
+}
+.pricing__desktop {
+  display: none;
+}
+.pricing__mobile {
+  display: flex;
+  width: 100vw;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin: 80px 0px 10px 0px;
+}
+.pricing__mobile__item {
+  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  width: 95%;
+  margin: 0 auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+.pricing__mobile__item--standart {
+  position: relative;
+}
+.mobile__item__header {
+  text-align: center;
+  background-color: #283645;
+  padding: 13px 0px;
+  max-height: 98px;
+}
+.mobile__item__header--standart {
+  position: relative;
+}
+.ribbon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.ribbon > p {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  transform: rotate(-45deg);
+  color: white;
+}
+.mobile__item__header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.mobile__item__header > p {
+  font-size: 24px;
+  font-weight: 300;
+  color: #c6c9cd;
+}
+.mobile__item__inner__point {
+  padding: 21px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #c6c9cd;
+  border-bottom: 1px solid #c6c9cd;
+}
+.mobile__item__inner__point p {
+  margin-left: 11%;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #45515e;
+}
+.mobile__item__inner__point svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 11%;
+}
+@media (min-width: 660px) {
+  .pricing {
+    position: static;
+    padding-top: 150px;
+    overflow-x: none;
+    padding-bottom: 70px;
+  }
+  .pricing__wrapper {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  .pricing__mobile {
+    display: none;
+  }
+  .pricing__desktop {
+    display: flex;
+    justify-content: center;
+  }
+  .pricing__table {
+    width: 100%;
+    border: none;
+  }
+  .table__heading {
+    text-transform: uppercase;
+    padding: 17px 0px;
+    text-align: center;
+    background-color: #283645;
+    width: 165px;
+  }
+  .table__heading--standart {
+    position: relative;
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+  }
+  .table__heading--standart h3 {
+    position: relative;
+    z-index: 5;
+  }
+  .ribbon--table {
+    position: absolute;
+    top: 0;
+  }
+  .ribbon--table > p {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    transform: rotate(-45deg);
+    color: white;
+  }
+  .table__heading h3 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  .table__heading > p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #c6c9cd;
+  }
+  .table__point {
+    background-color: white;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+    padding: 0px 0px;
+    font-size: 14px;
+    color: #283645;
+    text-align: center;
+  }
+  .table__point svg {
+    width: 30px;
+    height: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .pricing {
+    padding-bottom: 90px;
+  }
+  .pricing__wrapper {
+    max-width: 960px;
+  }
+  .table__heading {
+    width: 240px;
+  }
+  .table__heading h3 {
+    font-size: 18px;
+  }
+  .table__heading > p {
+    font-size: 24px;
+  }
+  .table__point {
+    font-size: 18px;
+    padding: 2px 0px;
+  }
+  .table__point svg {
+    width: 37px;
+    height: 45px;
+  }
+}
+.contact {
+  position: absolute;
+  top: 2636px;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 50px;
+  width: 100%;
+}
+.contact__intro {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 300px;
+  color: #283645;
+  margin-bottom: 44px;
+}
+.contacts__info {
+  text-align: center;
+}
+.info__block h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #283645;
+  margin-bottom: 10px;
+}
+.info__block p {
+  margin-bottom: 25px;
+  color: #d22856;
+  font-size: 24px;
+  font-weight: 300;
+}
+@media (min-width: 660px) {
+  .contact {
+    position: static;
   }
 }
