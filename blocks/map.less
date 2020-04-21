@@ -1,0 +1,71 @@
+// main: ../style.less
+
+.map{
+    position: absolute;
+    top: 1777px + 359px + 500px;
+    z-index: -1;
+}
+
+.map__map-img{
+    position: relative;
+    width: 100vw;
+    &--mobile{
+        display: block;
+    }
+    &--tablet{
+        display: none;
+    }
+    &--desktop{
+        display: none;
+    }
+}
+
+.map-img{
+    min-width:100%;
+}
+
+.map-marker{
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    z-index: 10;
+}
+
+@media (min-width:@tablet-width){
+  
+    .map__map-img{
+        &--mobile{
+            display: none;
+        }
+
+        &--tablet{
+            display: block;
+        }
+    }
+
+    .map-marker--tablet{
+        top: 65%;
+        left: 47%;
+    }
+
+    .map__map-img--tablet{
+        top: -1px;
+    }
+}
+
+@media(min-width:@desktop-width){
+    .map__map-img{
+        &--tablet{
+            display: none;
+        }
+        &--desktop{
+            display: block;
+            top: 200px;
+        }
+    }
+
+    .map-marker{
+        top: 57%;
+        left: 49%;
+    }
+}

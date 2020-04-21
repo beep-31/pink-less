@@ -6,6 +6,8 @@
     font-family: 'Open Sans', sans-serif;
     padding-top: 50px;
     width: 100%;
+    z-index: 100;
+    background-color: #fff;
 }
 
 .contact__intro {
@@ -17,7 +19,7 @@
     margin-bottom: 44px;
 }
 
-.contacts__info{
+.contact__info{
     text-align: center;
 }
 
@@ -28,15 +30,101 @@
     margin-bottom: 10px;
 }
 
-.info__block p{
+.info__block{
     margin-bottom: 25px;
+    &--last{
+        margin-bottom: 0;
+    }
+}
+
+.info__block p{
     color: #d22856;
     font-size: 24px;
     font-weight: 300;
 }
 
+.contact__triangle{
+    position: absolute;
+    width: 100vw;
+    z-index: 1000;
+    &--mobile{
+        display: block;
+    }
+    &--tablet{
+        display: none;
+    }
+    &--desktop{
+        display: none;
+    }
+}
+
+.contact__triangle img{
+    width: 100vw;
+}
+
 @media (min-width:@tablet-width){
     .contact{
         position: static;
+    }
+
+    .contact__intro{
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .contact__info{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .info__block{
+        width: 50%;
+        &--last{
+            width: 100%;
+        }
+    }
+
+    .contact__triangle{
+        &--mobile{
+            display: none;
+        }
+        &--tablet{
+            display: block;
+            z-index: 1000;
+            position: absolute;
+            width: 100%;
+        }
+        &--desktop{
+            display: none;
+        }
+    }
+}
+
+@media (min-width: @desktop-width){
+
+    .contact__intro{
+        margin-bottom: 60px;
+    }
+
+    .info__block{
+        width: 33.33%;
+        margin-bottom: 0px;
+    }
+
+    .contact__triangle{
+        &--mobile{
+            display: none;
+        }
+        &--tablet{
+            display: none;
+        }
+        &--desktop{
+            display: block;
+            z-index: 1000;
+            position: absolute;
+            width: 100%;
+        }
     }
 }
