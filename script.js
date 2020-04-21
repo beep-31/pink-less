@@ -1,4 +1,10 @@
 // window.addEventListener("DOMContentLoaded", function(){
+
+
+   let pixels = document.body.clientHeight;
+   let footer = document.body.querySelector('.footer');
+   footer.style.top = pixels;
+   console.log(pixels);
     let burger = document.querySelector('.burger-item'),
     nav = document.querySelector('#nav');
     burger.addEventListener('click', function(){

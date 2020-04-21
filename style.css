@@ -5,6 +5,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  position: relative;
+}
 body {
   overflow-x: hidden;
 }
@@ -828,7 +831,7 @@ table {
   text-align: center;
   margin: 0 auto;
   font-size: 24px;
-  font-weight: 300px;
+  font-weight: 300;
   color: #283645;
   margin-bottom: 44px;
 }
@@ -910,6 +913,15 @@ table {
     width: 33.33%;
     margin-bottom: 0px;
   }
+  .info__block--call {
+    order: 1;
+  }
+  .info__block--last {
+    order: 2;
+  }
+  .info__block--write {
+    order: 3;
+  }
   .contact__triangle--mobile {
     display: none;
   }
@@ -962,7 +974,7 @@ table {
     left: 47%;
   }
   .map__map-img--tablet {
-    top: -1px;
+    top: 100px;
   }
 }
 @media (min-width: 1200px) {
@@ -971,10 +983,78 @@ table {
   }
   .map__map-img--desktop {
     display: block;
-    top: 200px;
+    top: 500px;
   }
   .map-marker {
     top: 57%;
     left: 49%;
+  }
+}
+.map__map {
+  position: relative;
+}
+.footer {
+  display: none;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  z-index: 1000;
+  font-family: 'Open Sans', sans-serif;
+}
+.footer__wrapper {
+  max-width: 620px;
+  margin: 0 auto;
+}
+@media (min-width: 660px) {
+  .footer {
+    display: block;
+    background-color: #fff;
+    width: 100vw;
+  }
+  .footer__logo--desktop {
+    display: none;
+  }
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+  }
+  .footer__social {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer__social__icon {
+    text-align: center;
+    padding: 13px;
+    border: 3px solid #e9ebec;
+    border-radius: 50%;
+    margin: 0px 6px;
+  }
+  .footer__dev span {
+    background-color: #d22856;
+    color: white;
+    padding: 0px 5px;
+    border-radius: 2px;
+  }
+  .footer svg {
+    width: 20px;
+    height: 20px;
+    fill: #d22856;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    bottom: -500px;
+  }
+  .footer__wrapper {
+    max-width: 960px;
+    padding: 55px 0px;
+  }
+  .footer__logo--desktop {
+    display: block;
+  }
+  .footer__logo--tablet {
+    display: none;
   }
 }
