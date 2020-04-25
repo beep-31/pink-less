@@ -60,21 +60,27 @@
     </section>
     <main class="page-main">
         <div class="main__intro">
-            <p>Take a look on the photos which our users have posted. Your photo could be here too!</p>
+            <p>Take a look on the photos which our users have posted. Your photo could be here too! Don't you see it?</p>
         </div>
         <div class="main__cards">
-            <div class="card">
+            <div class="card card--panorama">
+                <div class="card__panorama">
+                    View of the day
+                </div>
                 <div class="card__photo">
                     <picture>
                         <source media="(min-width:1200px)" srcset="img/fotos/main/panorama-desktop.jpg">
                         <source media="(min-width:660px)" srcset="img/fotos/main/panorama-tablet.jpg">
-                        <img srcset="img/fotos/main/panorama-mobile.jpg">
+                        <img class="img--panorama" srcset="img/fotos/main/panorama-mobile.jpg">
                     </picture>
                 </div>
                 <div class="card__info">
                     <div class="card__info-left">
                         <div class="card__info__name"><h4>Ann</h4></div>
                         <div class="card__info__time">(5 min ago)</div>
+                    </div>
+                    <div class="card__info__text">
+                        <p>Should I go jump? Leave your comments here and watch my Live in Periscope!</p>
                     </div>
                    <div class="card__info-right">
                        <div class="card__info__likes">
@@ -84,7 +90,32 @@
                            </svg>
                        </div>
                    </div>
-
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__photo">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="img/fotos/main/photo-1-desktop.jpg">
+                        <source media="(min-width:660px)" srcset="img/fotos/main/photo-1-tablet.jpg">
+                        <img srcset="img/fotos/main/photo-1-mobile.jpg">
+                    </picture>
+                </div>
+                <div class="card__info">
+                    <div class="card__info-left">
+                        <div class="card__info__name"><h4>Ann </h4></div>
+                        <div class="card__info__time">(5 min ago)</div>
+                    </div>
+                    <div class="card__info__text">
+                        <p>Should I go jump? Leave your comments here and watch my Live in Periscope!</p>
+                    </div>
+                   <div class="card__info-right">
+                       <div class="card__info__likes">
+                           <p>Likes: 215</p>
+                           <svg>
+                               <use xlink:href="#heart">
+                           </svg>
+                       </div>
+                   </div>
                 </div>
             </div>
         </div>

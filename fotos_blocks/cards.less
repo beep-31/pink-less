@@ -1,0 +1,103 @@
+// main: ../fotos.less
+
+.page-main{
+    font-family: 'Open Sans',sans-serif;
+}
+
+.main__cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__intro{
+    font-size: 14px;
+    margin: 50px 0px;
+    text-align: center;
+    line-height: 2.14;
+    padding: 0 20px;
+}
+
+.card--panorama{
+    position: relative;
+}
+
+.card__panorama{
+    position: absolute;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: @hover-color;
+    padding: 10px 20px;
+    right: -20px;
+    top: 0;
+}
+
+.card__photo--panorama{
+    width: 100vw;
+}
+
+.img--panorama {
+    width: 100vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.card{
+    width: 87.5%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    &--panorama{
+        margin: 0px;
+    }
+}
+
+.card__photo img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card__info{
+    background-color: #f2f2f2;
+    padding: 10%;
+}
+
+.card__info-left{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.card__info__time{
+    margin-left: 5px;
+}
+
+.card__info__text{
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.card__info-right svg{
+    width: 15px;
+    height: 15px;
+    fill: @hover-color;
+    order: 1;
+    margin-right: 17px;
+}
+
+.card__info__likes{
+    display: flex;
+    align-items: center;
+    color: #d22856;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.card__info__likes p{
+    order: 2;
+}
