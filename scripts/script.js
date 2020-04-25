@@ -1,19 +1,5 @@
-// window.addEventListener("DOMContentLoaded", function(){
+window.addEventListener("DOMContentLoaded", function(){
 
-
-   let pixels = document.body.clientHeight;
-   let footer = document.body.querySelector('.footer');
-   footer.style.top = pixels;
-   console.log(pixels);
-    let burger = document.querySelector('.burger-item'),
-    nav = document.querySelector('#nav');
-    burger.addEventListener('click', function(){
-        if(nav.style.opacity==0){
-            nav.style.opacity = 1;
-        } else{
-            nav.style.opacity = 0;
-        }
-    });
     let review_dots = document.querySelectorAll('#review-dot'),
         review_items = document.querySelectorAll('.slider-item'),
         dot_parent = document.querySelector('.reviews__dots');
@@ -64,5 +50,5 @@
 
     }
     
-// });
+});
 
