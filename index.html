@@ -115,17 +115,13 @@
     </symbol>
 </svg>
     <header class="page-header">
-            <div class="page-header__logo">
-                <a class="page-header__logo--mobile">
-                    <img src="./img/header/logotype-mobile.png" alt="pink logo">
-                </a>
-                <a class="page-header__logo--tablet">
-                    <img src="./img/header/logotype-tablet.png" alt="pink logo">
-                </a>
-                <a href="" class="page-header__logo--desktop">
-                    <img src="./img/header/logotype-desktop.png" alt="pink logo">
-                </a>
-            </div>
+        <div class="page-header__logo">
+            <picture>
+                <source media="(min-width:1200px)" srcset="img/header/logotype-desktop.png">
+                <source media="(min-width:660px)" srcset="img/header/logotype-tablet.png"> 
+                <img srcset="img/header/logotype-mobile.png">   
+            </picture>
+        </div>
             <div class="page-header__burger">
                 <div class="burger-item burger-item--closed"></div>
             </div>

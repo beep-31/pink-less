@@ -31,15 +31,11 @@
 </svg>
     <header class="page-header">
         <div class="page-header__logo">
-            <a class="page-header__logo--mobile">
-                <img src="./img/header/logotype-mobile.png" alt="pink logo">
-            </a>
-            <a class="page-header__logo--tablet">
-                <img src="./img/header/logotype-tablet.png" alt="pink logo">
-            </a>
-            <a href="" class="page-header__logo--desktop">
-                <img src="./img/header/logotype-desktop.png" alt="pink logo">
-            </a>
+            <picture>
+                <source media="(min-width:1200px)" srcset="img/header/logotype-desktop.png">
+                <source media="(min-width:660px)" srcset="img/header/logotype-tablet.png"> 
+                <img srcset="img/header/logotype-mobile.png">   
+            </picture>
         </div>
         <div class="page-header__burger">
             <div class="burger-item burger-item--closed"></div>
@@ -78,15 +74,15 @@
                     </picture>
                 </div>
                 <div class="card__info card__info--panorama">
-                    <div class="card__info-left">
+                    <div class="card__info-left card__info-left--panorama">
                         <div class="card__info__name"><h4>Ann</h4></div>
                         <div class="card__info__time">(5 min ago)</div>
                     </div>
                     <div class="card__info__text">
                         <p>Should I go jump? Leave your comments here and watch my Live in Periscope!</p>
                     </div>
-                    <div class="card__info-right">
-                        <div class="card__info__likes">
+                    <div class="card__info-right card__info-right--panorama">
+                        <div class="card__info__likes card__info__likes--panorama">
                             <p>Likes: 215</p>
                             <svg>
                                 <use xlink:href="#heart">
@@ -255,6 +251,37 @@
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__logo">
+                <picture>
+                    <source media="(min-width:1200px)" srcset="img/footer/logo--desktop.png">
+                    <source media="(min-width:660px)" srcset="img/footer/logotype--tablet.png">
+                    <img srcset="img/footer/logo.png">
+                </picture>
+            </div>
+            <div class="footer__social">
+                <div class="footer__social__icon">
+                    <svg>
+                        <use xlink:href="#twitter">
+                    </svg>
+                </div>
+                <div class="footer__social__icon">
+                    <svg>
+                        <use xlink:href="#facebook">
+                    </svg>
+                </div>
+                <div class="footer__social__icon">
+                    <svg>
+                        <use xlink:href="#play">
+                    </svg>
+                </div>
+            </div>
+            <div class="footer__dev">
+                Developed by <span>beep-31</span>
+            </div>
+        </div>
+    </footer>
 <script src="scripts/header.js"></script>
 </body>
 </html>

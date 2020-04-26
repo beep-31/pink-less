@@ -96,6 +96,19 @@
 }
 
 @media (min-width: @tablet-width){
+    .page-main__wrapper{
+        max-width: 660px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main__intro{
+        max-width: 350px;
+        margin: 0 auto;
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
     .card{
         width: 45%;
     }
@@ -110,11 +123,32 @@
         margin: 0px;
     }
 
+    .card__info-right--panorama{
+        position: absolute;
+        right: 20px;
+        top: 30px;
+    }
+
     .card__info{
         height: 190px;
         padding: 30px;
         display: flex;
         flex-direction: column;
+        &--panorama{
+            max-width: 627px;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            height: 150px;
+        }
+    }
+
+    .card__info__likes--panorama{
+        font-size: 14px;
+    }
+
+    .card__info__likes--panorama p{
+        margin-right: 15px;
     }
 
     .card__info-left{
@@ -151,6 +185,11 @@
         max-width: 1160px;
         width: 100%;
         margin: 0 auto;
+        height: auto;
+    }
+
+    .card__info-left--panorama{
+        margin-bottom: 5px;
     }
 
 }
