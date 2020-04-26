@@ -238,7 +238,7 @@ table {
 .page-main {
   font-family: 'Open Sans', sans-serif;
 }
-.main__cards {
+.page-main__wrapper {
   display: flex;
   flex-wrap: wrap;
 }
@@ -347,10 +347,19 @@ table {
   }
 }
 @media (min-width: 1200px) {
+  .page-main__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
   .card {
-    width: 33%;
+    width: 30%;
   }
   .card--panorama {
     width: 100% !important;
+  }
+  .card__info--panorama {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
   }
 }

@@ -4,7 +4,7 @@
     font-family: 'Open Sans',sans-serif;
 }
 
-.main__cards{
+.page-main__wrapper{
     display: flex;
     flex-wrap: wrap;
 }
@@ -135,12 +135,22 @@
 }
 
 @media (min-width: @desktop-width){
+    .page-main__wrapper{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     .card{
-        width: 33%;
+        width: 30%;
         // max-width: 300px;
         &--panorama{
             width: 100% !important;
         }
+    }
+
+    .card__info--panorama{
+        max-width: 1160px;
+        width: 100%;
+        margin: 0 auto;
     }
 
 }
