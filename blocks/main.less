@@ -11,7 +11,7 @@
 }
 
 .page-main__right{
-    background-image: url("../img/main/bg-mobile.jpg") ;
+    background-image: url("img/main/bg-mobile.jpg") ;
     background-color: #1d2631;
     background-size: cover;
     background-position: center 0;
@@ -101,7 +101,7 @@
 
     .page-main{
         flex-direction: row;
-        background-image: url("../img/main/bg-tablet.jpg");
+        background-image: url("img/main/bg-tablet.jpg");
         background-color: #1d2631;
         background-size: cover;
         background-position: center 0;
@@ -134,10 +134,11 @@
 
 @media (min-width:@desktop-width){
     .page-main{
-        background-image: url("../img/main/bg.jpg");
+        background-image: url("img/main/bg.jpg");
         background-color: #1d2631;
-        background-size: cover;
+        background-size: cover auto;
         background-position-y: center;
+        background-repeat: no-repeat;
         padding: 125px 0px;
     }
 

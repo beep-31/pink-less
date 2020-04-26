@@ -17,10 +17,6 @@
     padding: 0 20px;
 }
 
-.card--panorama{
-    position: relative;
-}
-
 .card__panorama{
     position: absolute;
     color: #fff;
@@ -29,19 +25,16 @@
     text-transform: uppercase;
     background-color: @hover-color;
     padding: 10px 20px;
-    right: -20px;
+    right: 0px;
     top: 0;
 }
 
-.card__photo--panorama{
-    width: 100vw;
-}
 
-.img--panorama {
-    width: 100vw;
+.img--panorama{
+    width: 100vw !important;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin-left: -7%;
 }
 
 .card{
@@ -51,7 +44,7 @@
     display: flex;
     flex-direction: column;
     &--panorama{
-        margin: 0px;
+        position: relative;
     }
 }
 
@@ -100,4 +93,54 @@
 
 .card__info__likes p{
     order: 2;
+}
+
+@media (min-width: @tablet-width){
+    .card{
+        width: 45%;
+    }
+
+    .card--panorama{
+        width: 100% !important;
+    }
+
+    .img--panorama{
+        width: 100vw;
+        height: auto;
+        margin: 0px;
+    }
+
+    .card__info{
+        height: 190px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card__info-left{
+        margin-bottom: 15px;
+    }
+
+    .card__info__text{
+        margin-bottom: auto;
+    }
+
+    .card__info__likes p{
+        order: 1;
+    }
+
+    .card__info-right svg{
+        margin-left: auto;
+    }
+}
+
+@media (min-width: @desktop-width){
+    .card{
+        width: 33%;
+        // max-width: 300px;
+        &--panorama{
+            width: 100% !important;
+        }
+    }
+
 }
