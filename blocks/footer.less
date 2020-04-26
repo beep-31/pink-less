@@ -47,6 +47,10 @@
         border: 3px solid #e9ebec;
         border-radius: 50%;
         margin: 0px 6px;
+        transition: 0.1s linear;
+        &:hover{
+            border-color: black;
+        }
     }
 
     .footer__dev span{
@@ -54,12 +58,19 @@
         color: white;
         padding: 0px 5px;
         border-radius: 2px;
+        transition: 0.1s linear;
+        &:hover{
+            background-color: transparent;
+            color: black;
+            border-color: black;
+        }
     }
 
     .footer svg{
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         fill: #d22856;
+        margin-left: 1px;
     }
 
 }

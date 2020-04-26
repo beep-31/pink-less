@@ -4,11 +4,11 @@
     display: flex;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 95%;
     margin: 0 auto;
-    padding: 30px 0px;
+    height: 284px;
 }
 
 .footer__social{
@@ -21,12 +21,18 @@
     border: 3px solid #e9ebec;
     border-radius: 50%;
     margin: 0px 6px;
+    transition: 0.1s linear;
+    cursor: pointer;
+    &:hover{
+        border-color: black;
+    }
 }
 
 .footer svg{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     fill: #d22856;
+    margin-left: 1px;
 }
 
 .footer__dev span{
@@ -34,6 +40,13 @@
     color: white;
     padding: 0px 5px;
     border-radius: 2px;
+    border: 1px solid #d22856;
+    transition: 0.1s linear;
+    &:hover{
+        background-color: transparent;
+        color: black;
+        border-color: black;
+    }
 }
 
 @media (min-width: @tablet-width){
@@ -45,6 +58,8 @@
         max-width: 620px;
         width: 100%;
         margin: 0 auto;
+        height: auto;
+        padding: 50px 0px;
     }
 
     .footer__social{
@@ -56,9 +71,15 @@
 
 @media(min-width: @desktop-width){
 
+    .main__intro{
+        max-width: 510px;
+        font-size: 18px;
+        line-height: 1.66;
+    }
+
     .footer__wrapper{
         max-width: 960px;
-        padding: 55px 0px;
+        padding: 120px 0px 80px 0px; 
         
     }
 
