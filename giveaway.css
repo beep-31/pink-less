@@ -101,6 +101,11 @@ input[type="radio"]:checked + label:after {
   .skew-c {
     height: 120px;
   }
+  textarea {
+    max-width: 820px;
+    width: 100%;
+    height: 140px;
+  }
 }
 .page-header {
   position: absolute;
@@ -450,6 +455,10 @@ span.pink {
   padding: 20px 0px;
   border: none;
   margin-bottom: 40px;
+  transition: 0.2s linear;
+}
+.submit--btn:hover {
+  background-color: #23925d;
 }
 @media (min-width: 660px) {
   .visually_hidden {
@@ -487,20 +496,21 @@ span.pink {
   .contact__block--input {
     order: 1;
     border: none;
-    height: 300px;
+    height: 270px;
   }
   .contact__block--checkbox {
     order: 4;
   }
   .contact__block--contact-info {
     order: 3;
+    padding-bottom: 25px;
   }
   .contact__block--radio {
     order: 2;
   }
   .contact__block--textarea {
     order: 5;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
   .contact__block--submit {
     order: 6;
@@ -511,8 +521,8 @@ span.pink {
   }
   .icon {
     display: block;
-    left: 91%;
-    bottom: 25%;
+    left: 84%;
+    bottom: 34%;
   }
   .inner {
     margin: 0px;
@@ -523,6 +533,8 @@ span.pink {
   }
   .submit--btn {
     width: 300px;
+    cursor: pointer;
+    margin-bottom: 0px;
   }
   .contact__block__fields {
     margin-top: 23px;
@@ -535,6 +547,73 @@ span.pink {
   }
   input[type="email"] {
     width: 100%;
+  }
+  .info__input--icon label {
+    margin-right: 0px;
+    align-self: flex-start;
+    margin-left: 62px;
+    margin-top: 10px;
+  }
+  .info__input--icon input {
+    width: 85%;
+  }
+}
+@media (min-width: 1200px) {
+  .contact__wrapper {
+    max-width: 960px;
+    flex-wrap: wrap;
+    flex-direction: unset;
+  }
+  .contact__block--input {
+    width: 47%;
+  }
+  .contact__block--contact-info {
+    padding-bottom: 30px;
+    height: 155px;
+  }
+  .contact__block--radio {
+    width: 47%;
+  }
+  .contact__block--submit {
+    margin-bottom: 0px !important;
+    padding: 0px;
+  }
+  .contact__block__title {
+    padding: 5px 30px;
+  }
+  .contact-info__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .info__input--icon input {
+    width: 375px;
+  }
+  .visually_hidden {
+    margin-top: -12px !important;
+  }
+  .icon {
+    left: 87%;
+    padding: 14px;
+  }
+  .info__input--icon label {
+    margin-left: 20px;
+  }
+  .inner--checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: none;
+    width: 100%;
+  }
+  .checkbox__label {
+    margin: unset;
+  }
+  .info__checkbox {
+    margin: 0px 0px 45px 0px;
+    width: 33%;
+  }
+  .info__textarea {
+    width: 820px;
   }
 }
 .footer__wrapper {
