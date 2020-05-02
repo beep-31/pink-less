@@ -1,0 +1,311 @@
+// main: ../giveaway.less
+
+.contact{
+    font-family: 'Open Sans', sans-serif;
+}
+
+svg{
+    width: 22px;
+    height: 22px;
+}
+
+.contact__intro{
+    padding: 52px 6%;
+    font-size: 14px;
+    line-height: 2.14;
+    text-align: center;
+    font-weight: 400;
+    color: #283645;
+}
+
+.visually_hidden{
+    display: none;
+}
+
+.contact__block__title{
+    font-size: 14px;
+    color: #d22856;
+    text-transform: uppercase;
+    line-height: 1.28;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 35px;
+    max-width: 180px;
+}
+
+.contact__block{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 5%;
+    margin: 0 auto;
+    &--input{
+        height: 370px;
+        padding-bottom: 50px;
+        justify-content: space-between;
+    }
+    &--checkbox{
+        background-color: #f2f2f2;
+        padding-top: 35px;
+        justify-content: center;
+    }
+
+    &--contact-info{
+        justify-content: space-around;
+        height: 287px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &--radio{
+        background-color: #f2f2f2;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    &--textarea{
+        padding-top: 35px;
+        margin-bottom: 40px;
+    }
+
+    &--submit{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+.info__input{
+    display: flex;
+    flex-direction: column;
+    &--icon{
+        position: relative;
+    }
+}
+
+.inner{
+    max-width: 320px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.info__input label{
+    margin-left: 20px;
+    color: #d22856;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+    font-size: 14px;
+}
+
+.info__input input{
+    flex-grow: 1;
+    padding: 19px 23px;
+    border: 2px solid #e5e5e5;
+    &::placeholder{
+        font-size: 18px;
+        color: #283645;
+        opacity: 0.9;
+    }
+}
+
+.info__checkbox{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+}
+
+.info__checkbox label::after,
+.info__checkbox label::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+}
+.info__checkbox label::before{
+    height: 32px;
+    width: 32px;
+    border: 2px solid #e5e5e5;
+    background: #fff;
+    left: -48px;
+    top: -6px;
+}
+
+.info__checkbox label::after{
+    height: 8px;
+    width: 15px;
+    color: #d22856;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+    left: -38px;
+    top: 4px;
+}
+
+.info__checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+
+.info__checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+.checkbox__label{
+    color: #283645;
+    font-size: 18px;
+    margin-left: 35px;
+    position: relative;
+    display: inline-block;
+}
+
+.icon{
+    display: none;
+    position: absolute;
+    bottom: 0%;
+    background-color: #e5e5e5;
+    padding: 15px;
+}
+
+.info__radio{
+    margin-bottom: 45px;
+}
+
+.info__radio label{
+    font-size: 18px;
+    color: #283645;
+    position: relative;
+}
+
+
+.info__textarea{
+    margin: 0 auto;
+}
+
+span.pink{
+    color: #d22856;
+}
+
+.submit--btn{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #2aab6d;
+    width: 100%;
+    font-size: 18px;
+    max-width: 280px;
+    padding: 20px 0px;
+    border: none;
+    margin-bottom: 40px;
+}
+
+@media (min-width:@tablet-width){
+
+    .visually_hidden{
+        display: inline-block;
+        margin-top: -31px !important;
+    }
+
+    .contact__wrapper{
+        max-width: 620px;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info__input{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+    .info__input label{
+        margin: 0px;
+        margin-right: 20px;
+    }
+
+    .contact__block__title{
+        max-width: 100%;
+        padding: 5px 50px;
+        background-color: #fff;
+        margin-top: -10px;
+        // margin-bottom: 0px;
+    }
+
+    .contact__block{
+        padding: 0px 10px 0px 10px;
+        background-color: transparent !important;
+        border: 2px solid #e5e5e5;
+        margin-bottom: 50px;
+        &--input{
+            order: 1;
+            border: none;
+            height: 300px;
+        }
+        &--checkbox{
+            order: 4;
+        }
+    
+        &--contact-info{
+            order: 3;
+        }
+    
+        &--radio{
+            order: 2;
+        }
+    
+        &--textarea{
+            order: 5;
+            padding-bottom: 50px;
+        }
+    
+        &--submit{
+            order: 6;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            border: none;
+        }
+    }
+
+    .icon{
+        display: block;
+        left: 91%;
+        bottom: 25%;
+    }
+
+    .inner{
+        margin: 0px;
+        margin-left: 60px;
+    }
+
+    .info__textarea{
+        width: 500px;
+    }
+
+    .submit--btn{
+        width: 300px;
+    }
+
+    .contact__block__fields{
+        margin-top: 23px;
+    }
+
+    .info__input--icon{
+        flex-direction: column-reverse;
+    }
+
+    input[type="number"]{
+        width: 100%;
+    }
+
+    input[type="email"]{
+        width: 100%;
+    }
+}
+
+
+
+

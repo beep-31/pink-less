@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Contest</title>
+    <link rel="stylesheet" href="giveaway.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- facebook -->
+    <svg style="display: none;">
+        <symbol id="facebook" viewBox="0 0 24 24">
+            <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+        </symbol>
+    </svg>
+    <!-- twitter -->
+    <svg style="display: none;">
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                        c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                        c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                        c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                        c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                        c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                        C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                        C480.224,136.96,497.728,118.496,512,97.248z"/>
+                </g>
+            </g>
+        </symbol>
+    </svg>
+    <!-- play -->
+    <svg style="display: none;">
+        <symbol id="play" viewBox="0 0 494.942 494.942">
+            <path d="m35.353 0 424.236 247.471-424.236 247.471z"/>
+        </symbol>
+    </svg>
+    <!-- phone icon  -->
+    <svg style="display: none;">
+        <symbol viewBox="0 0 513.64 513.64" width="22px" height="22px" id="phone" style="fill: #d22856;">
+            <g>
+                <path d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72
+                    c-51.2-12.8-120.32-79.36-133.12-133.12c-7.68-23.041,7.68-48.641,30.72-56.32c33.28-10.24,43.52-53.76,17.92-79.36l-71.68-71.68
+                    c-20.48-17.92-51.2-17.92-69.12,0l-48.64,48.64c-48.64,51.2,5.12,186.88,125.44,307.2c120.32,120.32,256,176.641,307.2,125.44
+                    l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z"/>
+            </g>
+        </symbol>
+    </svg>
+    <!-- email icon  -->
+    <svg style="display: none;">
+        <symbol viewBox="0 0 511.996 511.996" id="email" width="22px" height="22px" style="fill: #d22856;">
+            <path d="m230.9 253.371c13.369 8.913 36.827 8.914 50.199-.001.002-.001.005-.003.007-.004l227.865-151.911c-7.474-21.616-28.018-37.188-52.142-37.188h-401.663c-24.125 0-44.668 15.572-52.143 37.188l227.87 151.912c.003.002.005.002.007.004z"/><path d="m297.746 278.328c-.003.002-.005.004-.007.005-11.702 7.801-26.724 11.702-41.741 11.702-15.02 0-30.036-3.9-41.739-11.703-.002-.001-.003-.002-.005-.003l-214.254-142.835v257.072c0 30.417 24.747 55.163 55.166 55.163h401.666c30.418 0 55.164-24.746 55.164-55.163v-257.072z"/>
+        </symbol>
+    </svg>
+    <header class="page-header">
+        <div class="page-header__logo">
+            <picture>
+                <source media="(min-width:1200px)" srcset="img/header/logotype-desktop.png">
+                <source media="(min-width:660px)" srcset="img/header/logotype-tablet.png"> 
+                <img srcset="img/header/logotype-mobile.png">   
+            </picture>
+        </div>
+            <div class="page-header__burger">
+                <div class="burger-item burger-item--closed"></div>
+            </div>
+            <nav class="main-nav" id="nav">
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__list-item"><a href="index.html">Main</a></li>
+                        <li class="main-nav__list-item"><a href="fotos.html">Fotos</a></li>
+                        <li class="main-nav__list-item list-item--active"><a href="">Giveaway</a></li>
+                        <li class="main-nav__list-item"><a href="#">Beep-31</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <div class="intro">
+        <div class="intro__title">Participate in the contest for the craziest journey</div>
+    </div>
+    <section class="contact">
+        <div class="contact__inner">
+            <div class="contact__intro">
+                <p>Share your story and get a chance to win a valuable award - 1000 miles on your bonus card! <span class="visually_hidden">Please, fill out the form below:</span></p>
+            </div>
+            <form action="" class="contact__form">
+                <div class="contact__wrapper">
+                    <div class="contact__block contact__block--input">
+                        <div class="info__input">
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" placeholder="Write your name *" required/>
+                        </div>
+                        <div class="info__input">
+                            <label for="surname">Surname: </label>
+                            <input type="text" name="surname" placeholder="Write your surname *" required>
+                        </div>
+                        <div class="info__input">
+                            <label for="second_surname">Middle name:</label>
+                            <input type="text" name="second_surname" placeholder="Write your middle name">
+                        </div>
+                    </div>
+                    <div class="contact__block contact__block--checkbox">
+                            <div class="contact__block__title">
+                                <p>Crazy achievements during your trips</p>
+                            </div>
+                            <div class="inner">
+                            <div class="info__checkbox">
+                                <input type="checkbox" name="checkbox-1" id="checkbox-1">
+                                <label for="checkbox-1" class="checkbox__label">Selfie with shark</label>
+                            </div>
+                            <div class="info__checkbox">
+                                <input type="checkbox" name="checkbox-2" id="checkbox-2">
+                                <label for="checkbox-2" class="checkbox__label">Got toasted on the beach</label>
+                            </div>
+                            <div class="info__checkbox">
+                                <input type="checkbox" name="checkbox-3" id="checkbox-3">
+                                <label for="checkbox-3" class="checkbox__label">Saw Chuck Norris</label>
+                            </div>
+                            <div class="info__checkbox">
+                                <input type="checkbox" name="checkbox-4" id="checkbox-4">
+                                <label for="checkbox-4" class="checkbox__label">Bought a lot of souvenirs</label>
+                            </div>
+                            <div class="info__checkbox">
+                                <input type="checkbox" name="checkbox-5" id="checkbox-5">
+                                <label for="checkbox-5" class="checkbox__label">Held a tower</label>
+                            </div>
+                            <div class="info__checkbox">
+                                <input type="checkbox" name="checkbox-6" id="checkbox-6">
+                                <label for="checkbox-6" class="checkbox__label">Crushed the hotel!</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__block contact__block--contact-info">
+                        <div class="contact__block__title visually_hidden">
+                            <p>Your contact info</p>
+                        </div>
+                        <div class="info__input info__input--icon">
+                            <label for="number">Phone number</label>
+                            <input type="number" name="number" placeholder="Write your phone number">
+                            <i class="icon icon--phone"><svg><use xlink:href="#phone"></svg></i>
+                        </div>
+                        <div class="info__input info__input--icon">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Write your email *" required>
+                            <i class="icon icon--email"><svg><use xlink:href="#email"></svg></i>
+                        </div>
+                    </div>
+                    <div class="contact__block contact__block--radio">
+                            <div class="contact__block__title">
+                               <p>Which app did you use during your journey?</p>
+                            </div>
+                            <div class="inner">
+                            <div class="info__radio">
+                                <input type="radio" name="app" id="ios" value="ios">
+                                <label for="ios">Pink for iOS</label>
+                            </div>
+                            <div class="info__radio">
+                                <input type="radio" name="app" id="android" value="android">
+                                <label for="android">Pink for Android</label>
+                            </div>
+                            <div class="info__radio">
+                                <input type="radio" name="app" id="windows" value="windows">
+                                <label for="windows">Windows Phone</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__block contact__block--textarea">
+                        <div class="contact__block__title">
+                            <p>Describe your emotions</p>
+                        </div>
+                        <div class="info__textarea">
+                            <textarea name="emotons" id="emotions" cols="30" rows="10" placeholder="Don't be shy in your expretions"></textarea>
+                        </div>
+                    </div>
+                    <div class="contact__block contact__block--submit">
+                        <div class="contact__block__btn">
+                            <button type="submit" class="submit--btn">Send Form</button>
+                        </div>
+                        <div class="contact__block__fields">
+                            <p><span class="pink">*</span>- required fields</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__logo">
+                <picture>
+                    <source media="(min-width:1200px)" srcset="img/footer/logo--desktop.png">
+                    <source media="(min-width:660px)" srcset="img/footer/logotype--tablet.png">
+                    <img srcset="img/footer/logo.png">
+                </picture>
+            </div>
+            <div class="footer__social">
+                <div class="footer__social__icon">
+                    <svg>
+                        <use xlink:href="#twitter">
+                    </svg>
+                </div>
+                <div class="footer__social__icon">
+                    <svg>
+                        <use xlink:href="#facebook">
+                    </svg>
+                </div>
+                <div class="footer__social__icon">
+                    <svg>
+                        <use xlink:href="#play">
+                    </svg>
+                </div>
+            </div>
+            <div class="footer__dev">
+                Developed by <span>beep-31</span>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/header.js"></script>
+</body>
+</html>

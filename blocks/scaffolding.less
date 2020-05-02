@@ -24,6 +24,78 @@ table{
     border-collapse: collapse;
 }
 
+input{
+    outline: none;
+}
+
+
+textarea{
+    max-width: 280px;
+    outline: none;
+    width: 100%;
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    padding: 25px 20px;
+    border: 2px solid #e5e5e5;
+    height: 200px;
+    &::placeholder{
+        font-size: 18px;
+        line-height: 1.60;
+        color: #283645;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+
+input[type="radio"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+input[type="radio"] + label{
+    position: relative;
+    padding-left: 65px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+input[type="radio"] + label:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -6px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    border-radius: 100%;
+    background: #fff;
+}
+
+input[type="radio"] + label:after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: #d22856;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
 .skew-c{
     width:100vw;
     height:50px;
@@ -35,6 +107,11 @@ table{
 @media (min-width: @tablet-width){
     .skew-c{
         height: 96px;
+    }
+
+    textarea{
+        max-width: 500px;
+        width: 100%;
     }
 }
 
