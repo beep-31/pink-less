@@ -21,6 +21,27 @@
 
 //burger item
 
+.burger-item--opened {
+    display: flex;
+    width: 45px;
+    height: 4px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: rotate(-45deg);
+    transition: 0.1s linear;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 45px;
+        height: 4px;
+        transform: rotate(90deg);
+        background-color: #fff;
+        border-radius: 5px;
+    }
+}
+
 .burger-item--closed{
     display: flex;
     width: 50px;
