@@ -30,7 +30,7 @@
     cursor: pointer;
     border-radius: 5px;
     transform: rotate(-45deg);
-    transition: 0.1s linear;
+    transition: 0.1s;
     &::after{
         position: absolute;
         content: "";
@@ -39,6 +39,13 @@
         transform: rotate(90deg);
         background-color: #fff;
         border-radius: 5px;
+    }
+
+    &:hover{
+        background-color: @hover-color;
+        &::after{
+            background-color: @hover-color;
+        }
     }
 }
 

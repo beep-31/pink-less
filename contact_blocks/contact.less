@@ -1,4 +1,4 @@
-// main: ../giveaway.less
+// main: ../giveaway.css
 
 .contact{
     font-family: 'Open Sans', sans-serif;
@@ -203,6 +203,36 @@ span.pink{
     }
 }
 
+input[type="text"], input[type="email"], input[type="number"]{
+    transition: 0.2s linear;
+    &:hover{
+        border: 2px solid #283645;
+    }
+    &:focus{
+        border: 2px solid #d22856;
+    }
+}
+
+input[type="radio"] + label{
+    &:hover{
+        &::before{
+            border: 2px solid #283645;
+        }
+    }
+}
+
+input[type="checkbox"] + label{
+    cursor: pointer;
+    &:hover{
+        &::before{
+            border: 2px solid #283645;
+            transition: 0.1s linear;
+        }
+    }
+}
+
+
+
 @media (min-width:@tablet-width){
 
     .visually_hidden{
@@ -278,7 +308,8 @@ span.pink{
     .icon{
         display: block;
         left: 84%;
-        bottom: 34%;
+        bottom: 36%;
+        padding: 13px;
     }
 
     .inner{
@@ -332,14 +363,9 @@ span.pink{
     }
 
     .contact__block{
-        // margin: initial;
         &--input{
             width: 47%;
         }
-        &--checkbox{
-            
-        }
-    
         &--contact-info{
             padding-bottom: 30px;
             height: 155px;
@@ -348,11 +374,6 @@ span.pink{
         &--radio{
            width: 47%;
         }
-    
-        &--textarea{
-
-        }
-    
         &--submit{
             margin-bottom: 0px !important;
             padding: 0px;
@@ -378,8 +399,8 @@ span.pink{
     }
 
     .icon{
-        left: 87%;
-        padding: 14px;
+        left: 86.6%;
+        bottom: 35%;
     }
 
     .info__input--icon label{
@@ -407,6 +428,8 @@ span.pink{
     .info__textarea{
         width: 820px;
     }
+
+
 }
 
 
